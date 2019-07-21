@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConMessage</class>
+ <widget class="QWidget" name="ConMessage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>764</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ConMessage</string>
+  </property>
+  <widget class="QPushButton" name="WaitPeople">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>调控前后人数对比</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="WaitTime">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>调控前后时长对比</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Detail">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>170</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>调控明细</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>30</y>
+     <width>521</width>
+     <height>551</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>310</y>
+     <width>151</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/TrafficCon/image/kenan.jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="TrafficCon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>WaitPeople</sender>
+   <signal>clicked()</signal>
+   <receiver>ConMessage</receiver>
+   <slot>OnPeople()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>108</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>151</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>WaitTime</sender>
+   <signal>clicked()</signal>
+   <receiver>ConMessage</receiver>
+   <slot>OnTime()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>92</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>150</x>
+     <y>155</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Detail</sender>
+   <signal>clicked()</signal>
+   <receiver>ConMessage</receiver>
+   <slot>ShowDetail()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>102</x>
+     <y>198</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>145</x>
+     <y>234</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>OnPeople()</slot>
+  <slot>OnTime()</slot>
+  <slot>ShowDetail()</slot>
+ </slots>
+</ui>

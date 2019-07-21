@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="/TrafficCon">
+    <file>image/多门餐厅平面图.jfif</file>
+    <file>image/人流1.jpg</file>
+    <file>image/人流2.jpg</file>
+    <file>image/人流3.jpg</file>
+    <file>image/kenan.jpg</file>
+    <file>image/back3.jpg</file>
+    <file>image/back2.jpg</file>
+    <file>image/first.png</file>
+    <file>image/background.jpg</file>
+    <file>image/2.png</file>
+    <file>image/1.png</file>
+    <file>image/logo.png</file>
+    <file>image/logo1.png</file>
+    <file>image/logo2.png</file>
+  </qresource>
+</RCC>
